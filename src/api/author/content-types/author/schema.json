@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "authors",
   "info": {
-    "singularName": "categorie",
-    "pluralName": "categories",
-    "displayName": "category",
-    "description": ""
+    "singularName": "author",
+    "pluralName": "authors",
+    "displayName": "author"
   },
   "options": {
     "draftAndPublish": true
@@ -20,7 +19,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::post.post",
-      "mappedBy": "categorie"
+      "mappedBy": "author"
     }
   }
 }
