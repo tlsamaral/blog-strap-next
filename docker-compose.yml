@@ -1,0 +1,14 @@
+services:
+  blog_strap_api:
+    container_name: blog_strap_api
+    hostname: blog_strap_api
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: senha
+      POSTGRES_DB: blog_strap
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+        - C:\.PostgressData\postgresonly\blog_strap_api:/var/lib/postgresql/data/pgdata
+    ports:
+      - 5432:5432
