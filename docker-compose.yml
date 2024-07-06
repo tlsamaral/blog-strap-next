@@ -5,7 +5,7 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_PASSWORD: senha
+      POSTGRES_PASSWORD: 
       POSTGRES_DB: blog_strap
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
